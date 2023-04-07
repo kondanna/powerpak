@@ -22,7 +22,7 @@ const UrlInputField = () => {
     const match = inputValue.match(/\d+/) ?? ['']
     const courseNumber = match[0]
     if (!courseNumber) {
-      return setErrorMessage({ message: 'Please enter course number or full link to course.', show: true })
+      return setErrorMessage({ message: 'Please enter the course number or full link.', show: true })
     }
     clearErrors()
     window.open(`https://www.powerpak.com/courses/${courseNumber}/Rationale${courseNumber}.pdf`)
