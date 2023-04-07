@@ -31,7 +31,7 @@ const UrlInputField = () => {
   return (
     <>
       <div className="form-group" style={{ padding: '10px' }}>
-        <input type="text" className="form-control" placeholder="Enter course number or url" value={inputValue} onChange={handleChange} />
+        <input type="text" className="form-control" placeholder="Enter url or course number" value={inputValue} onChange={handleChange} />
         <small className="form-text text-muted">https://www.powerpak.com/course/preamble/<mark>123722</mark> or <mark>123722</mark></small>
       </div>
       <div style={{ padding: '10px', marginBottom: '10px' }}>
