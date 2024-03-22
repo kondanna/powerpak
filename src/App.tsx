@@ -37,6 +37,7 @@ const UrlInputField = () => {
       <div style={{ padding: '10px', marginBottom: '10px' }}>
         <button className="btn btn-primary btn-lg" type="submit" onClick={handleSubmit}>Get Answer Key</button>
       </div>
+      <small className="form-text text-muted">(opens pdf in new tab)</small>
       {errorMessage.show && <div className="alert alert-dismissible alert-warning" role="alert">
         <button type="button" className="btn-close" data-bs-dismiss="alert" onClick={clearErrors}></button>
         {errorMessage.message}
