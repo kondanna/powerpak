@@ -36,8 +36,8 @@ const UrlInputField = () => {
       </div>
       <div style={{ padding: '10px', marginBottom: '10px' }}>
         <button className="btn btn-primary btn-lg" type="submit" onClick={handleSubmit}>Get Answer Key</button>
-        <small className="form-text text-muted">(opens in new tab - make sure you're logged in to Powerpak)</small>
       </div>
+      <small className="form-text text-muted">(opens in new tab - make sure you're logged in to Powerpak)</small>
       {errorMessage.show && <div className="alert alert-dismissible alert-warning" role="alert">
         <button type="button" className="btn-close" data-bs-dismiss="alert" onClick={clearErrors}></button>
         {errorMessage.message}
